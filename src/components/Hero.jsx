@@ -22,7 +22,9 @@ const Hero = () => {
               >
                   <h1 className="text-neutral-950 font-semibold text-4xl">Shalap Pandotra</h1>
                   <h3 className="text-neutral-950 font-semibold">Developer</h3>
-                  <p className="text-neutral-950 ">Hi! I'm a passionate web developer with a knack for learning and crafting responsive, user-friendly web applications. I specialize in modern frontend technologies like React and Tailwind CSS, complemented by my experience in backend development with tools such as Angular, MySQL and MongoDB. I thrive on solving complex problems and bringing ideas to life through clean, efficient code. Whether it's building dynamic UIs or designing robust backend systems, I enjoy every step of the development process. Let’s create something amazing together!</p>
+                  <p className="text-neutral-950 ">Hi! I'm a passionate web developer with a knack for learning and crafting responsive, user-friendly web applications. I specialize in modern frontend technologies like React and Tailwind CSS, complemented by my experience in backend development with tools such as Angular, MySQL and MongoDB. I thrive on solving complex problems and bringing ideas to life through clean, efficient code. Whether it's building dynamic UIs or designing robust backend systems, I enjoy every step of the development process. Let’s create something amazing together! <br />
+                  Ps this website is also made with React ;)
+                  </p>
               </motion.div>
         </div>
     </div>

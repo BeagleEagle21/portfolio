@@ -1,5 +1,6 @@
 import stamp from "../assets/stamp.png";
 import { motion } from "motion/react";
+import rose from "../assets/rose.png";
 
 const projectData = [
   {
@@ -8,6 +9,13 @@ const projectData = [
     description: "Created a simple react based To-Do List web app allowing user to add, update and delete tasks.",
     technologies: ["HTML"],
     githubLink: "https://github.com/mallratserf/to-do-list", 
+  },
+  {
+    image: rose,
+    title: "Portfolio",
+    description: "Created this Portfolio to display all my projects and technologies I work/have worked with.",
+    technologies: ["React", "Tailwind", "JavaScript"],
+    githubLink: "https://github.com/mallratserf/portfolio",
   },
 ];
 
