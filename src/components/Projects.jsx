@@ -1,21 +1,33 @@
+import PropTypes from "prop-types";
 import stamp from "../assets/stamp.png";
 import { motion } from "motion/react";
 import rose from "../assets/rose.png";
+import petals from "../assets/petals.png";
 
 const projectData = [
   {
     image: stamp,
     title: "To-Do List",
-    description: "Created a simple react based To-Do List web app allowing user to add, update and delete tasks.",
+    description:
+      "Created a simple react based To-Do List web app allowing user to add, update and delete tasks.",
     technologies: ["HTML"],
-    githubLink: "https://github.com/mallratserf/to-do-list", 
+    githubLink: "https://github.com/mallratserf/to-do-list",
   },
   {
     image: rose,
     title: "Portfolio",
-    description: "Created this Portfolio to display all my projects and technologies I work/have worked with.",
+    description:
+      "Created this Portfolio to display all my projects and technologies I work/have worked with.",
     technologies: ["React", "Tailwind", "JavaScript"],
     githubLink: "https://github.com/mallratserf/portfolio",
+  },
+  {
+    image: petals,
+    title: "Smart Utility Management Sysytem",
+    description: "A team project as a part of my final year project at college. This is still a work in progress as of 10th January, 2024.",
+    technologies: ["MongoDB", "React", "Tailwind", "JavaScript"],
+    githubLink: "/",
+
   },
 ];
 
