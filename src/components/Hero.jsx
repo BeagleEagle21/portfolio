@@ -1,5 +1,5 @@
 import { motion } from "motion/react"
-import pfp from "../assets/pfp.jpg"
+import pfp from "../assets/pfp.png"
 
 const Hero = () => {
   return (
