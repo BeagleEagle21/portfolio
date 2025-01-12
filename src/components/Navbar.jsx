@@ -43,13 +43,13 @@ const Navbar = () => {
         </li>
 
         <li className="cursor-pointer text-2xl opacity-70 transition-all duration-200 hover:text-purple-300 hover:opacity-100">
-          <a href="https://www.instagram.com/shalappandotra/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <a href="https://www.instagram.com/beagleeagle21/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
             <BsInstagram />
           </a>
         </li>
 
         <li className="cursor-pointer text-2xl opacity-70 transition-all duration-200 hover:text-purple-300 hover:opacity-100">
-          <a href="https://github.com/mallratserf" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <a href="https://github.com/BeagleEagle21" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
             <BsGithub />
           </a>
         </li>
@@ -86,13 +86,13 @@ const Navbar = () => {
             </li>
 
             <li className="cursor-pointer text-2xl opacity-70 transition-all duration-200 hover:text-purple-300 hover:opacity-100">
-              <a href="https://www.instagram.com/shalappandotra/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <a href="https://www.instagram.com/beagleeagle21/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                 <BsInstagram />
               </a>
             </li>
 
             <li className="cursor-pointer text-2xl opacity-70 transition-all duration-200 hover:text-purple-300 hover:opacity-100">
-              <a href="https://github.com/mallratserf" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <a href="https://github.com/BeagleEagle21" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                 <BsGithub />
               </a>
             </li>
