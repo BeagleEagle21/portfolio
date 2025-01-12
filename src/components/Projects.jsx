@@ -28,7 +28,7 @@ const projectData = [
     title: "Smart Utility Management Sysytem",
     description:
       "A team project as a part of my final year project at college. This is still a work in progress as of 10th January, 2024.",
-    technologies: ["MongoDB", "React", "Tailwind", "JavaScript"],
+    technologies: ["MongoDB", "React", "Tailwind", "JavaScript", "Swiper"],
     githubLink: "/",
     vercelLink: "/",
   },
