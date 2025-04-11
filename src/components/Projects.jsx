@@ -2,7 +2,7 @@ import stamp from "../assets/stamp.png";
 import { motion } from "motion/react";
 import rose from "../assets/rose.png";
 import petals from "../assets/petals.png";
-import cat from "../assets/cat.png";
+const cat = new URL("../assets/cat.png", import.meta.url).href;
 import PropTypes from "prop-types";
 
 <img src={cat} alt="force bundle" style={{ display: 'none' }} />
