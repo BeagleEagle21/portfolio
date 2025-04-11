@@ -3,7 +3,9 @@ import { motion } from "motion/react";
 import rose from "../assets/rose.png";
 import petals from "../assets/petals.png";
 import PropTypes from "prop-types";
-import desire from "../assets/desire.jpg"
+import cat from "../assets/cat.png"
+
+import { useEffect, useState } from "react";
 
 const projectData = [
   {
@@ -34,26 +36,19 @@ const projectData = [
     vercelLink: "/",
   },
   {
-    image: desire,
-    title: "idk help me",
-    description: "this is just testing",
-    technologies: ["vuejs"],
-    githubLink: "/",
-    vercelLink: "/"
-  },
-  {
-    image: desire,
-    title: "idk help me",
-    description: "this is just testing",
-    technologies: ["vuejs"],
-    githubLink: "/",
-    vercelLink: "/"
-  },
+    image: cat,
+    title: "QR Code Generator",
+    description: "A simple QR Code generator, nothing much to say for this one.",
+    technologies: ["React", "TailwindCSS"],
+    githubLink: "https://github.com/BeagleEagle21/QR-Code-Generator",
+    vercelLink: "https://qr-code-generator-alpha-umber.vercel.app/"
+  }
 
 ];
 
 const ProjectCard = ({ project }) => {
   return (
+    <ScrollReveal>
       <div className="flex flex-col items-center gap-8 md:flex-row">
         {project.vercelLink ? (
           <a
@@ -109,6 +104,7 @@ const ProjectCard = ({ project }) => {
           </div>
         </div>
       </div>
+    </ScrollReveal>
   );
 };
 
@@ -124,17 +120,26 @@ ProjectCard.propTypes = {
 };
 
 const ScrollReveal = ({ children }) => {
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
+  if (!isClient) return <>{children}</>;
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 100 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
-      transition={{ duration: 0.3, delay: 0.2 }}
+      transition={{ duration: 0.4, delay: 0.2 }}
     >
       {children}
     </motion.div>
   );
 };
+
 
 ScrollReveal.propTypes = {
   children: PropTypes.node.isRequired,
