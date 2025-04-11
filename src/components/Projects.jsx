@@ -2,8 +2,9 @@ import stamp from "../assets/stamp.png";
 import { motion } from "motion/react";
 import rose from "../assets/rose.png";
 import petals from "../assets/petals.png";
-const cat = new URL("../assets/cat.png", import.meta.url).href;
+import cat from "../assets/cat.png"
 import PropTypes from "prop-types";
+import desire from "../assets/desire.jpg"
 
 <img src={cat} alt="force bundle" style={{ display: 'none' }} />
 
@@ -36,14 +37,13 @@ const projectData = [
     vercelLink: "/",
   },
   {
-    image: cat,
-    title: "QRG",
-    description:
-      "A simple little website that generates a downloadable QR code image from any given custom link. This one didnt really take so very long but was a nice venture into the qrcode library into react. I did't bother too much with the aesthetics on this one due to time constraints but it was certainly a nice learning experience.",
-    technologies: ["React", "Tailwind", "JavaScript"],
-    githubLink: "https://github.com/BeagleEagle21/QR-Code-Generator",
-    vercelLink: "/",
-  },
+    image: desire,
+    title: "idk help me",
+    description: "this is just testing",
+    technologies: ["vuejs"],
+    githubLink: "/",
+    vercelLink: "/"
+  }
 ];
 
 const ProjectCard = ({ project }) => {
