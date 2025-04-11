@@ -2,7 +2,8 @@ import stamp from "../assets/stamp.png";
 import { motion } from "motion/react";
 import rose from "../assets/rose.png";
 import petals from "../assets/petals.png";
-import moon from "../assets/moon.png";
+import moon from "../assets/Moon.png";
+import PropTypes from "prop-types";
 
 const projectData = [
   {
@@ -39,7 +40,7 @@ const projectData = [
       "A simple little website that generates a downloadable QR code image from any given custom link. This one didnt really take so very long but was a nice venture into the qrcode library into react. I did't bother too much with the aesthetics on this one due to time constraints but it was certainly a nice learning experience.",
     technologies: ["React", "Tailwind", "JavaScript"],
     githubLink: "https://github.com/BeagleEagle21/QR-Code-Generator",
-    vercelLink: "https://qr-code-generator-alpha-umber.vercel.app/",
+    vercelLink: "/",
   },
 ];
 
@@ -105,6 +106,17 @@ const ProjectCard = ({ project }) => {
   );
 };
 
+ProjectCard.propTypes = {
+  project: PropTypes.shape({
+    image: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    technologies: PropTypes.arrayOf(PropTypes.string).isRequired,
+    githubLink: PropTypes.string,
+    vercelLink: PropTypes.string,
+  }).isRequired,
+};
+
 const ScrollReveal = ({ children }) => {
   return (
     <motion.div
@@ -116,6 +128,10 @@ const ScrollReveal = ({ children }) => {
       {children}
     </motion.div>
   );
+};
+
+ScrollReveal.propTypes = {
+  children: PropTypes.node.isRequired,
 };
 
 const Projects = () => {
