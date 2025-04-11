@@ -35,7 +35,7 @@ const projectData = [
   },
   {
     image: moon,
-    title: "QR Code Generator",
+    title: "QRG",
     description:
       "A simple little website that generates a downloadable QR code image from any given custom link. This one didnt really take so very long but was a nice venture into the qrcode library into react. I did't bother too much with the aesthetics on this one due to time constraints but it was certainly a nice learning experience.",
     technologies: ["React", "Tailwind", "JavaScript"],
