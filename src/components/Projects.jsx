@@ -5,6 +5,8 @@ import petals from "../assets/petals.png";
 import cat from "../assets/cat.png";
 import PropTypes from "prop-types";
 
+<img src={cat} alt="force bundle" style={{ display: 'none' }} />
+
 const projectData = [
   {
     image: stamp,
