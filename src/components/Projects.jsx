@@ -54,7 +54,6 @@ const projectData = [
 
 const ProjectCard = ({ project }) => {
   return (
-    <ScrollReveal>
       <div className="flex flex-col items-center gap-8 md:flex-row">
         {project.vercelLink ? (
           <a
@@ -110,7 +109,6 @@ const ProjectCard = ({ project }) => {
           </div>
         </div>
       </div>
-    </ScrollReveal>
   );
 };
 
