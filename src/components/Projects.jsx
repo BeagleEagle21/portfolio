@@ -2,11 +2,8 @@ import stamp from "../assets/stamp.png";
 import { motion } from "motion/react";
 import rose from "../assets/rose.png";
 import petals from "../assets/petals.png";
-import cat from "../assets/cat.png"
 import PropTypes from "prop-types";
 import desire from "../assets/desire.jpg"
-
-<img src={cat} alt="force bundle" style={{ display: 'none' }} />
 
 const projectData = [
   {
@@ -43,7 +40,16 @@ const projectData = [
     technologies: ["vuejs"],
     githubLink: "/",
     vercelLink: "/"
-  }
+  },
+  {
+    image: desire,
+    title: "idk help me",
+    description: "this is just testing",
+    technologies: ["vuejs"],
+    githubLink: "/",
+    vercelLink: "/"
+  },
+
 ];
 
 const ProjectCard = ({ project }) => {
