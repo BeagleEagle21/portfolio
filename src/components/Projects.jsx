@@ -3,7 +3,7 @@ import { motion } from "motion/react";
 import rose from "../assets/rose.png";
 import petals from "../assets/petals.png";
 import PropTypes from "prop-types";
-import cat from "../assets/cat.png"
+import cat from "../assets/cat.png";
 
 import { useEffect, useState } from "react";
 
@@ -14,7 +14,7 @@ const projectData = [
     description:
       "Created a simple react based To-Do List web app allowing user to add, update and delete tasks.",
     technologies: ["HTML"],
-    githubLink: "https://github.com/mallratserf/to-do-list",
+    githubLink: "https://github.com/shalap-pandotra/to-do-list",
     vercelLink: "https://portfolio-ep.vercel.app/",
   },
   {
@@ -23,7 +23,7 @@ const projectData = [
     description:
       "Created this Portfolio to display all my projects and technologies I work/have worked with.",
     technologies: ["React", "Tailwind", "JavaScript"],
-    githubLink: "https://github.com/mallratserf/portfolio",
+    githubLink: "https://github.com/shalap-pandotra/portfolio",
     vercelLink: "",
   },
   {
@@ -38,12 +38,12 @@ const projectData = [
   {
     image: cat,
     title: "QR Code Generator",
-    description: "A simple QR Code generator, nothing much to say for this one.",
+    description:
+      "A simple QR Code generator, nothing much to say for this one.",
     technologies: ["React", "TailwindCSS"],
-    githubLink: "https://github.com/BeagleEagle21/QR-Code-Generator",
-    vercelLink: "https://qr-code-generator-alpha-umber.vercel.app/"
-  }
-
+    githubLink: "https://github.com/shalap-pandotra/QR-Code-Generator",
+    vercelLink: "https://qr-code-generator-alpha-umber.vercel.app/",
+  },
 ];
 
 const ProjectCard = ({ project }) => {
@@ -139,7 +139,6 @@ const ScrollReveal = ({ children }) => {
     </motion.div>
   );
 };
-
 
 ScrollReveal.propTypes = {
   children: PropTypes.node.isRequired,
